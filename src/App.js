@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import defaultTodos from './data/todos'
-import './css/App.css'
 import TodoItem from './components/todoItem'
 import SubmitTodoBar from './components/submitTodoBar'
+import './css/App.css'
 
 const App = () => {
 	const [ newTodoName, setNewTodoName ] = useState( '' )
@@ -43,8 +43,7 @@ const App = () => {
 	}
 
 	const onRemoveClick = ( id ) => {
-		//implement this logic
-		console.log( 'Remove Item!', id )
+		setTodos( todos.filter( todoItem => todoItem.id !== id ) )
 	}
 
 	const todoItems = () => {
