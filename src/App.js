@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import defaultTodos from './data/todos'
-import TodoItem from './components/todoItem'
-import SubmitTodoBar from './components/submitTodoBar'
+import TodoItem from './components/TodoItem'
+import SubmitTodoBar from './components/SubmitTodoBar'
 import './css/App.css'
 
 const App = () => {

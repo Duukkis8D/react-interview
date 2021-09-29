@@ -1,6 +1,6 @@
 import React from 'react'
 
-const todoItem = ( { todo, onClick, onRemoveClick } ) => {
+const TodoItem = ( { todo, onClick, onRemoveClick } ) => {
 	let color
 	let text
 
@@ -29,4 +29,4 @@ const todoItem = ( { todo, onClick, onRemoveClick } ) => {
 	)
 }
 
-export default todoItem
+export default TodoItem

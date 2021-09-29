@@ -1,6 +1,6 @@
 import React from 'react'
 
-const submitTodoBar = ( { onSubmit, newTodoName, onInputChange } ) => {
+const SubmitTodoBar = ( { onSubmit, newTodoName, onInputChange } ) => {
 	return (
 		<form
 			className='wrapper'
@@ -21,4 +21,4 @@ const submitTodoBar = ( { onSubmit, newTodoName, onInputChange } ) => {
 	)
 }
 
-export default submitTodoBar
+export default SubmitTodoBar
