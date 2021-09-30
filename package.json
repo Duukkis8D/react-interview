@@ -12,7 +12,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "stylelint": "stylelint ’**/*.scss’"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -28,6 +29,8 @@
     "@testing-library/react": "^12.1.1",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.19.0",
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0"
   }
 }
