@@ -14,7 +14,7 @@ const TodoItem = ( { todo, onClick, onRemoveClick } ) => {
 
 	return (
 		<div className='wrapper' style={ { backgroundColor: color } }>
-			<h3>{ todo.name }</h3>
+			<h2>{ todo.name }</h2>
 			<button
 				className='btn'
 				onClick={ () => onClick( todo.id ) }>

@@ -66,6 +66,7 @@ const App = () => {
 
 	return (
 		<div className=''>
+			<h1>Todo list</h1>
 			{ todoItems() }
 			<SubmitTodoBar
 				onSubmit={ onSubmit }
