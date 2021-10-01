@@ -4,7 +4,6 @@ const SubmitTodoBar = ( { onSubmit, newTodoName, onInputChange } ) => {
 	return (
 		<form
 			className='wrapper'
-			style={ { 'gridTemplateColumns': '7fr 2fr' } }
 			onSubmit={ onSubmit }>
 			<input
 				placeholder='Add new todo'
@@ -12,10 +11,11 @@ const SubmitTodoBar = ( { onSubmit, newTodoName, onInputChange } ) => {
 				onChange={ onInputChange }
 			/>
 			<button
-				className='btn btn-success'
+				id='btn-success'
+				className='btn'
 				type='submit'
 				value='Submit'>
-                    Submit
+					Submit
 			</button>
 		</form>
 	)

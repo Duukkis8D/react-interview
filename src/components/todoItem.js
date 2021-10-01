@@ -5,25 +5,28 @@ const TodoItem = ( { todo, onClick, onRemoveClick } ) => {
 	let text
 
 	if ( todo.complete === true ) {
-		color = 'lightgreen'
+		color = 'green'
 		text = 'Complete'
 	} else {
-		color = 'pink'
+		color = 'red'
 		text = 'Incomplete'
 	}
 
 	return (
-		<div className='wrapper' style={ { backgroundColor: color } }>
+		<div className='wrapper' style={ { borderColor: color } }>
 			<h2>{ todo.name }</h2>
 			<button
+				id='btn-complete'
 				className='btn'
+				style={ { backgroundColor: color } }
 				onClick={ () => onClick( todo.id ) }>
 				{ text }
 			</button>
 			<button
+				id='btn-remove'
 				className='btn'
 				onClick={ () => onRemoveClick( todo.id ) }>
-                    Remove from list
+					Remove from list
 			</button>
 		</div>
 	)
