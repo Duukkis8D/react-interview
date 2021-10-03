@@ -63,11 +63,11 @@ input {
 	min-height: 56px;
 }
 
-#btn-complete {
+.btn-complete {
 	min-width: 102px;
 }
 
-#btn-remove {
+.btn-remove {
 	margin-left: 0;
 	margin-right: 0;
 	color: black;

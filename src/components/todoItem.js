@@ -16,15 +16,13 @@ const TodoItem = ( { todo, onClick, onRemoveClick } ) => {
 		<div className='wrapper' style={ { borderColor: color } }>
 			<h2>{ todo.name }</h2>
 			<button
-				id='btn-complete'
-				className='btn'
+				className='btn btn-complete'
 				style={ { backgroundColor: color } }
 				onClick={ () => onClick( todo.id ) }>
 				{ text }
 			</button>
 			<button
-				id='btn-remove'
-				className='btn'
+				className='btn btn-remove'
 				onClick={ () => onRemoveClick( todo.id ) }>
 					Remove from list
 			</button>
