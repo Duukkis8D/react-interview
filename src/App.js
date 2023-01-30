@@ -9,7 +9,8 @@ const App = () => {
 	const [ todos, setTodos ] = useState( defaultTodos )
 
 	const generateNewId = () => {
-		return todos.length + 1
+		const ids = todos.map( todo => todo.id )
+		return Math.max( ...ids ) + 1
 	}
 
 	const onSubmit = ( event ) => {
